@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you be my Valentine?</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="hearts" aria-hidden="true"></div>
+
+    <main class="card" role="main">
+      <h1 class="title">Will you be my Valentine?</h1>
+      <p class="subtitle">I couldn't imagine a better day than with you 💖</p>
+
+      <div class="button-row" id="buttonRow" aria-hidden="false">
+        <button id="yesBtn" class="btn yes">Yes, of course!</button>
+        <button id="noBtn" class="btn no" aria-label="No (try to click me if you can)">No</button>
+      </div>
+    </main>
+
+    <!-- Modal shown after Yes -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-content">
+        <h2 id="modalTitle">Yay! 💘</h2>
+        <p>You're my Valentine — let's make this day unforgettable.</p>
+        <button id="closeModal" class="btn yes">Hug me 🤗</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
